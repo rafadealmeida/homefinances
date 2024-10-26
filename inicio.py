@@ -36,6 +36,10 @@ Session = sessionmaker(bind=engine)
 def index():
   return render_template('index.html')
 
+@app.route('/home')
+def home():
+  return render_template('home.html')
+
 @app.route('/registra')
 def registra():
   return render_template('cadatraUsuario.html')
